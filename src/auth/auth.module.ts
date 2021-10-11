@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Issuer } from 'openid-client';
 
 import { AuthSSOStrategy } from './auth-sso.strategy';
 import { CLIENT } from './auth.constants';
-import { Issuer } from 'openid-client';
 import { AuthController } from './auth.controller';
-import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
   imports: [ConfigModule],

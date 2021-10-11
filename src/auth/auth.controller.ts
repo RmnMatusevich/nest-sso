@@ -1,4 +1,5 @@
 import { Controller, Get, UseGuards, Request } from '@nestjs/common';
+
 import { SSOAuthGuard } from './sso-auth.guard';
 
 @Controller('auth')
